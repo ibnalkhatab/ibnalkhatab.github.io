@@ -1,0 +1,76 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Welcom</title>
+</head>
+
+
+<body>
+<div id="banner">
+    <h1>Lets play ;)</h1>
+    <h3>the Game will start soon</h3>
+<a href="https://discord.gg/VWF77k6RW7" class="btn-readmore">join discord</a>
+<a href="https://discord.gg/VWF77k6RW7" class="btn-readmore">join whatsapp</a>
+
+<center>
+<!-- Display the countdown timer in an element -->
+<h1 id="demo"></h1>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("May , 13, 2022 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+</center>
+</div>
+
+<main>
+    <section>
+        <div class="card">
+            <div class="card-image">
+                <a href="">
+                    <img src="images/hint.png" alt="Card Image">
+                </a>
+            </div>
+
+            <div class="card-description">
+                <a href="">
+                    <h3>ther is XXXX ;)</h3>
+                </a>
+                <p>
+                    Play as a team and try to find me before the game starts
+                </p>
+            </div>
+        </div>
+</main>
+</body>
